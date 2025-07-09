@@ -8,14 +8,3 @@ jobs:
   run-e2e-tests:
     uses: Harbour-Enterprises/superdoc-tests/.github/workflows/run-e2e-tests.yml@main
     secrets: inherit
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-~                                                                                                        
-
