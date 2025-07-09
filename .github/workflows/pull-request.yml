@@ -1,0 +1,21 @@
+name: Pull-request to main
+
+on:
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  run-e2e-tests:
+    uses: Harbour-Enterprises/superdoc-tests/.github/workflows/run-e2e-tests.yml@main
+    secrets: inherit
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+~                                                                                                        
+
