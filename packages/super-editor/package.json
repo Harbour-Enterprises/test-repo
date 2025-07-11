@@ -1,0 +1,94 @@
+{
+  "name": "@harbour-enterprises/super-editor",
+  "version": "0.0.1",
+  "license": "AGPL-3.0",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/super-editor.es.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./converter": {
+      "import": "./dist/converter.es.js"
+    },
+    "./docx-zipper": {
+      "import": "./dist/docx-zipper.es.js"
+    },
+    "./toolbar": {
+      "import": "./dist/toolbar.es.js"
+    },
+    "./super-input": {
+      "import": "./dist/super-input.es.js"
+    },
+    "./editor": {
+      "import": "./dist/super-editor.es.js"
+    },
+    "./file-zipper": {
+      "import": "./dist/file-zipper.es.js"
+    },
+    "./ai-writer": {
+      "import": "./dist/ai-writer.es.js"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "main": "./dist/super-editor.es.js",
+  "module": "./dist/super-editor.es.js",
+  "scripts": {
+    "dev": "vite",
+    "test:e2e": "playwright test ./src/tests/e2e",
+    "preview": "vite preview",
+    "build": "vite build && tsc",
+    "clean": "rm -rf dist",
+    "test": "vitest",
+    "build:watch": "vite build --watch --logLevel warn",
+    "pack": "rm *.tgz 2>/dev/null || true && npm run build && npm pack && mv harbour-enterprises-super-editor-0.0.1-alpha.0.tgz ./super-editor.tgz"
+  },
+  "dependencies": {
+    "color2k": "^2.0.3",
+    "eventemitter3": "^5.0.1",
+    "he": "^1.2.0",
+    "jszip": "^3.10.1",
+    "prosemirror-commands": "^1.5.2",
+    "prosemirror-dropcursor": "^1.8.1",
+    "prosemirror-gapcursor": "^1.3.2",
+    "prosemirror-history": "^1.4.0",
+    "prosemirror-keymap": "^1.2.2",
+    "prosemirror-model": "^1.21.0",
+    "prosemirror-schema-basic": "^1.2.2",
+    "prosemirror-schema-list": "^1.3.0",
+    "prosemirror-search": "^1.1.0",
+    "prosemirror-state": "^1.4.3",
+    "prosemirror-tables": "^1.4.0",
+    "prosemirror-transform": "^1.9.0",
+    "prosemirror-view": "^1.33.8",
+    "uuidv4": "^6.2.13",
+    "vue": "^3.4.21",
+    "xml-js": "^1.6.11"
+  },
+  "peerDependencies": {
+    "naive-ui": "^2.38.2",
+    "tippy.js": "^6.3.7",
+    "vite-plugin-node-polyfills": "^0.22.0",
+    "y-prosemirror": "^1.2.12",
+    "yjs": "13.6.19",
+    "@floating-ui/dom": "^1.7.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.51.0",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vue/test-utils": "^2.4.6",
+    "playwright": "^1.51.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-nested-import": "^1.3.0",
+    "tippy.js": "^6.3.7",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.12",
+    "vitest": "^1.6.1",
+    "vue-draggable-next": "^2.2.1",
+    "which": "^5.0.0",
+    "@floating-ui/dom": "^1.7.0"
+  }
+}
