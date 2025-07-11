@@ -1,0 +1,20 @@
+.sd-editor-list-item-node-view {
+  position: relative;
+  width: 100%;
+}
+
+.sd-editor-list-item-numbering {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: auto;
+  text-align: right;
+  z-index: 1;
+}
+
+.sd-editor-list-item-content-dom {
+  position: relative;
+  min-height: inherit;
+  word-wrap: break-word;
+}

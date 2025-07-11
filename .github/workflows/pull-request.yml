@@ -15,5 +15,5 @@ jobs:
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer ${{ secrets.PAT_TOKEN }}" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
-            -d '{"ref": "main"}' \
+            -d '{"ref": "main", "inputs": {"superdoc-branch": "${{ github.head_ref }}"}}' \
             https://api.github.com/repos/Harbour-Enterprises/superdoc-tests/actions/workflows/173620104/dispatches 
